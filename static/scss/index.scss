@@ -1,0 +1,35 @@
+.contain
+{
+    position: relative;
+    top: 35%;
+}
+
+.loginbox
+{
+    background-color: #F4E3C9;
+    width: 400px;
+    padding: 20px;
+
+    form
+    {
+        position: relative;
+        left: 5%;
+        margin: 0px;
+    }
+}
+
+body {
+    background-color: #B5DCE1;
+}
+#toRegister {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#toRegisterdec
+{
+    background-color: #80D448;
+    padding: 10px;
+    width: 81px;
+    margin: 0px;
+    border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+html
+    head
+        title Flitter Login Page
+        link(rel="stylesheet", href="/static/css/common.css")
+        link(rel="stylesheet", href="/static/css/index.css")
+    body
+        div.contain
+            div.row
+                div.columns.large-8
+                    h1 Flitter
+                    p Land of the true Fleeters
+                div.columns.large-4
+                    div.loginbox
+                        form#myform(name="login", method="post")
+                            label Username 
+                            input(type="text", name="user")
+                            br
+                            label <br />Password 
+                            input(type="password", name="pass")
+                            br
+                            input(type="submit", value="Login")
+                    a(href="/register")#toRegister
+                        div#toRegisterdec Sign up!
+    script(src='/static/js/vendor/jquery-2.1.4.min.js')
+    script(src='/static/js/index.js')

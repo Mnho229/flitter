@@ -1,0 +1,33 @@
+html
+    head
+        title Flitter Main Page
+        link(rel="stylesheet", href="/static/css/common.css")
+        link(rel="stylesheet", href="/static/css/main.css")
+    body
+        div.contain
+            div.row.encompass
+                div.columns.medium-3.separate.navbar
+                    a#fleets
+                        div.nav Fleets
+                    a#showfollowers
+                        div.nav Current Followers
+                    a#nonfollowers 
+                        div.nav Follower Suggestions
+                    div.constraint
+                        label See X number of fleets
+                            input(type="number" name="numFleets" value=0)
+                        br
+                        label Start at Y
+                            input(type="number" name="startingFleet" value=0)
+                    a#logout
+                        div#logoutdec Log out
+                div.columns.medium-9.separate.fleetContainer
+                    div.containtextbox
+                        p What would you like to say?
+                        textarea.resizedTextbox(maxlength=150, name="postfleet")
+                        br
+                        a#addFleet fleet
+                    div.construct.scroll
+                        p.decon Click on Fleets, Current Followers, or Follower Suggestions to get started!
+    script(src='/static/js/vendor/jquery-2.1.4.min.js')
+    script(src='/static/js/main.js')

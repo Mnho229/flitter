@@ -1,0 +1,38 @@
+html
+    head
+        title Flitter Registration
+        link(rel="stylesheet", href="/static/css/common.css")
+        link(rel="stylesheet", href="/static/css/register.css")
+    body
+        div.contain
+            div.row
+                div.columns.large-8
+                    p We believe in a close-knit network of users.
+                    p Together, we can build a critical mass of knowledge that we can unleash to the world beyond.
+                    p Come join in on the fun, and be part of this great social network!
+                    p When you register, you will be redirected back to the login page.  If registering was not successful, the page will stay the same.
+                div.columns.large-4
+                    div.loginbox
+                        form#myform(name="register", method="post")
+                            label Username 
+                            input(type="text", name="user")
+                            br
+                            br
+                            label Password  
+                            input(type="text", name="pass")
+                            br
+                            br
+                            label First Name
+                            input(type="text", name="fname")
+                            br
+                            br
+                            label Last Name
+                            input(type="text", name="lname")
+                            br
+                            br
+                            label Location
+                            input(text="text", name="location")
+                            br
+                            br
+                            input(type="submit", value="Register")
+    script(src='/static/js/vendor/jquery-2.1.4.min.js')
